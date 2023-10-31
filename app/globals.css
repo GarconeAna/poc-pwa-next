@@ -18,10 +18,189 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #1e1e30;
+}
+
+.header {
+  padding: 0 16px;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e30;
+  border-bottom: 2px solid #27293d;
+}
+
+.page-padding {
+  padding: 7rem 1.25rem;
+}
+
+.page-padding-small {
+  padding: 3rem 1.25rem;
+}
+
+.container-large {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.main-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.heading-xhuge {
+  font-weight: 600;
+  font-size: 56px;
+}
+
+.heading-large {
+  font-weight: 600;
+  font-size: 42px;
+}
+
+.margin-bottom-small {
+  margin-bottom: 20px;
+}
+
+.text-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.text-size-ssmall {
+  font-size: 13px;
+}
+
+.text-size-small {
+  font-size: 20px;
+}
+
+.text-size-medium {
+  font-size: 40px;
+}
+
+.text-color-gray {
+  color: #becff1;
+  opacity: .64;
+}
+
+.text-color-green {
+  color: #3de8a0;
+}
+
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.wallet-button-wrapper {
+  width: 100%;
+  max-width: 500px;
+  padding-top: 24px;
+}
+
+.wallet-list {
+  border: 1px solid #27293d;
+  border-radius: 5px;
+}
+
+.wallet-list .button-transparent {
+  border-bottom: 1px solid #27293d;
+}
+
+.wallet-list .button-transparent:last-child {
+  border: none;
+}
+
+.button-large-green {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 105px;
+  height: 48px;
+  padding: 13px 32px;
+  background-color: #3de8a0;
+  color: #126c46;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color .25s cubic-bezier(.165,.84,.44,1);
+}
+
+.button-transparent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 48px;
+  padding: 13px 32px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button-transparent-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4px 8px;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #27293d;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.border-money {
+  padding: 8px 16px;
+  margin-bottom: 35px;
+  background-color: #27293d;
+  border-radius: 50px;
+}
+
+.ticket-list {
+  display: flex;
+  gap: 8px;
+}
+
+.ticket-list .ticket {
+  width: 30px;
+  height: 50px; 
+  background-color: #126c46; 
+  transform: skew(-15deg); 
+}
+
+.info-plays-wins {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.info-plays-wins p {
+  text-transform: uppercase;
 }
